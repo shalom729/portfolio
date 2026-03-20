@@ -305,3 +305,21 @@ footer {
   background: #f9fafb;
   border-top: 1px solid #e5e7eb;
 }
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  #nav { padding: 12px 20px; }
+
+  section { padding: 48px 20px; }
+
+  h1 { font-size: 28px; }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -104,7 +104,7 @@ function renderCard(p) {
   const textColor = isLive ? '#111' : '#9ca3af'
   const descColor = isLive ? '#6b7280' : '#9ca3af'
 
-  const dataAttr = isLive ? `data-category="${p.category}"` : ''
+  const dataAttr = `data-category="${p.category}"`
 
   return `
     <div class="${isLive ? 'card' : 'card card-pending'}" ${dataAttr}>
@@ -148,9 +148,7 @@ function renderFilters() {
     container.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'))
     btn.classList.add('active')
 
-    // Cards without data-category (wip/planned) are always shown
     document.querySelectorAll('#projects-grid .card').forEach(card => {
-      if (!card.dataset.category) return
       card.style.display = (key === 'all' || card.dataset.category === key) ? '' : 'none'
     })
   })

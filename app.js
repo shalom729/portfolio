@@ -64,7 +64,7 @@ function renderCTA() {
     { label: 'Email',    href: CONFIG.email,     primary: false },
   ]
   container.innerHTML = buttons.map(b =>
-    `<a class="${b.primary ? 'btn-primary' : 'btn-secondary'}" href="${b.href}" target="_blank" rel="noopener">${b.label}</a>`
+    `<a class="${b.primary ? 'btn-primary' : 'btn-secondary'}" href="${b.href}"${b.href.startsWith('mailto') ? '' : ' target="_blank" rel="noopener"'}>${b.label}</a>`
   ).join('')
 }
 
@@ -107,7 +107,7 @@ function renderCard(p) {
   const dataAttr = isLive ? `data-category="${p.category}"` : ''
 
   return `
-    <div class="card ${isLive ? '' : 'card-pending'}" ${dataAttr}>
+    <div class="${isLive ? 'card' : 'card card-pending'}" ${dataAttr}>
       <div class="card-top">
         ${badge}
         ${yearEl}

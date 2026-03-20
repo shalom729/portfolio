@@ -51,3 +51,134 @@ section {
   color: #9ca3af;
   margin-bottom: 24px;
 }
+
+/* ── Hero ── */
+#hero { padding-top: 72px; }
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #9ca3af;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.intro {
+  font-size: 14px;
+  color: #4b5563;
+  max-width: 480px;
+  margin-bottom: 28px;
+}
+
+/* CTA buttons rendered by JS */
+.cta-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 18px;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  padding: 8px 18px;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary:hover { background: #333; }
+.btn-secondary:hover { border-color: #9ca3af; }
+
+/* ── About ── */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.about-text {
+  font-size: 13px;
+  color: #374151;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 10px 16px;
+  background: #fafafa;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+
+.resume-btn:hover { border-color: #9ca3af; }
+
+.resume-icon {
+  width: 30px;
+  height: 30px;
+  background: #111;
+  border-radius: 4px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.resume-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111;
+}
+
+.resume-sub {
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+.skills-label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #9ca3af;
+  margin-bottom: 12px;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skills-tags span {
+  background: #f3f4f6;
+  border-radius: 4px;
+  padding: 5px 12px;
+  font-size: 12px;
+  color: #374151;
+}

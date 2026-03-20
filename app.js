@@ -1,8 +1,8 @@
 // ── Config: replace these URLs with your own ──────────────────────────
 const CONFIG = {
-  github:   'https://github.com/your-username',
-  linkedin: 'https://linkedin.com/in/your-profile',
-  email:    'mailto:your@email.com',
+  github:   'https://github.com/shalom729',
+  linkedin: 'https://www.linkedin.com/in/chong-an-ying',
+  email:    'mailto:shalomying729@gmail.com',
 }
 
 // ── Project Data ──────────────────────────────────────────────────────
